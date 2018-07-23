@@ -16,5 +16,10 @@ namespace PlasmidDatabase2
         {
             InitializeComponent();
         }
+
+        private void CmdEnterPlasmid_Click(object sender, EventArgs e)
+        {
+            // start method to create and save new plasmid in controller
+        }
     }
 }

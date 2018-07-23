@@ -25,5 +25,12 @@ namespace PlasmidDatabase2
 
             return a;
         }
+
+        public void CreatePlasmidSaveToDB()
+        {
+            // create new plasmid
+            // start model.METHOD that gets input from view and puts it into plasmid
+            // save plasmid to database (maybe in model?
+        }
     }
 }
