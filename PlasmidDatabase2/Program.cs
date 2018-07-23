@@ -10,6 +10,18 @@ namespace PlasmidDatabase2
     {
         static void Main(string[] args)
         {
+            Controller controller = new Controller();
+            View view = new View();
+
+            // vorrübergehender Runtime Check
+            bool exit = false;
+
+            while (exit == false) 
+            {
+                exit = controller.TestMethode();
+            }
+
+            Console.ReadLine();
         }
     }
 }
