@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace PlasmidDatabase2
 {
@@ -10,16 +14,13 @@ namespace PlasmidDatabase2
     {
         static void Main(string[] args)
         {
-            Controller controller = new Controller();
+            
             View view = new View();
+            Application.Run(view);
 
-            // vorrübergehender Runtime Check
-            bool exit = false;
+            Console.WriteLine("Name: {0}, Sequenz: {1}", view.StringPlasmidName, view.StringPlasmidSequenz);
 
-            while (exit == false) 
-            {
-                exit = controller.TestMethode();
-            }
+
 
             Console.ReadLine();
         }

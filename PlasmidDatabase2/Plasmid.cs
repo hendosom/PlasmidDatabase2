@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PlasmidDatabase2
 {
-    class Plasmid
+    public class Plasmid
     {
         public string PlasmidName { get; set; }
         public string PlasmidSequence { get; set; }
